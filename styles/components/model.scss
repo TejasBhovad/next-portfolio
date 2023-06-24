@@ -24,17 +24,7 @@ body {
   position: absolute;
   transition: ease-in-out 0.45s;
 }
-.circle {
-  // margin-top: 3rem;
-  // z-index: 2;
-  height: 17.25rem;
-  width: 17.25rem;
-  border-radius: 50%;
-  background: linear-gradient(-45deg, #122945, #0a89ff);
-  opacity: 0.25;
-  transition: ease-in-out 0.35s;
-  position: absolute;
-}
+
 @media only screen and (max-width: 850px) {
   .model-view {
     height: 15rem;
@@ -48,6 +38,58 @@ body {
   .circle {
     height: 13.5rem;
     width: 13.5rem;
+  }
+}
+html {
+  .circle {
+    // margin-top: 3rem;
+    // z-index: 2;
+    height: 17.25rem;
+    width: 17.25rem;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #122945, #0a89ff);
+    opacity: 0.25;
+    transition: ease-in-out 0.35s;
+    position: absolute;
+  }
+  .title {
+    // z-index: 3;
+    // transform: translateY(1rem);
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: rgb(144, 144, 144);
+    position: fixed;
+    text-align: center;
+    position: absolute;
+    transition: ease-in-out 0.45s;
+  }
+}
+html.dark {
+  .circle {
+    // margin-top: 3rem;
+    // z-index: 2;
+    height: 17.25rem;
+    width: 17.25rem;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #122945, #0a89ff);
+    opacity: 0.25;
+    transition: ease-in-out 0.35s;
+    position: absolute;
+  }
+  .title {
+    // z-index: 3;
+    // transform: translateY(1rem);
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: white;
+    position: fixed;
+    text-align: center;
+    position: absolute;
+    transition: ease-in-out 0.45s;
   }
 }
 html.light {

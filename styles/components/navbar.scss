@@ -1,6 +1,12 @@
 @import "/styles/scss-variables.scss";
+html {
+  .nav-links {
+    display: none;
+  }
+}
 html.dark {
   .nav-links {
+    display: inline;
     text-decoration: none;
     font-size: 1.2rem;
     color: $textDark-dark;
