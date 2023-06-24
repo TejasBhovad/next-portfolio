@@ -1,0 +1,328 @@
+@import "/styles/scss-variables.scss";
+html.dark {
+  .nav-links {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: $textDark-dark;
+    font-weight: 500;
+    transition: ease-in-out 0.15s;
+  }
+  .nav-links:hover {
+    color: $textLight-dark;
+    transition: ease-in-out 0.25s;
+  }
+  .half-bold {
+    font-weight: bold;
+    color: $accentLight-dark;
+    font-size: 1.5rem;
+  }
+  .half-light {
+    font-weight: light;
+    color: $textLight-dark;
+    font-size: 1.5rem;
+  }
+  .Contact {
+    border: 1.5px solid rgba($accentLight-dark, 0.5);
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    border-radius: 0.4rem;
+    background-color: rgba($accentLight-dark, 0.15);
+    transition: ease-in-out 0.25s;
+  }
+  .Contact:hover {
+    border: 1.5px solid rgba($accentLight-dark, 0.75);
+    background-color: rgba($accentLight-dark, 0.25);
+    transition: ease-in-out 0.25s;
+  }
+  .gradient-bar {
+    background: linear-gradient(-45deg, #123245, #0ac6ff, #123245, #0ac6ff);
+    background-size: 400% 400%;
+    animation: gradient 2s ease 2;
+    width: 100%;
+    height: 3px;
+  }
+  $stroke-color: $textLight-dark;
+  .line {
+    stroke: $stroke-color;
+  }
+  .circle-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: right;
+    margin-top: 15.5rem;
+    margin-right: 2.75rem;
+    .Contact {
+      padding: 0;
+      background-color: #ffffff00;
+      border: none;
+    }
+  }
+
+  .circle-menu li {
+    color: $textLight-dark;
+    margin-bottom: 20px;
+  }
+
+  .circle-menu a {
+    color: $textLight-dark;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .circle-menu a:hover {
+    transition: color 0.3s ease;
+    color: $accentDark-dark;
+  }
+  .hover-pointer {
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  .hover-pointer:hover {
+    transition: color 0.3s ease;
+    color: $accentDark-dark;
+  }
+}
+
+html.light {
+  .nav-links {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: $textLight-light;
+    transition: ease-in-out 0.15s;
+  }
+  .nav-links:hover {
+    color: $textDark-light;
+    transition: ease-in-out 0.25s;
+  }
+  .half-bold {
+    font-weight: bold;
+    color: $accentLight-light;
+    font-size: 1.5rem;
+  }
+  .half-light {
+    font-weight: light;
+    color: $textLight-light;
+    font-size: 1.5rem;
+  }
+  .Contact {
+    border: 1.5px solid rgba($accentLight-light, 0.5);
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    color: rgba($accentDark-dark, 0.65);
+    border-radius: 0.4rem;
+    background-color: rgba($accentLight-light, 0.15);
+    transition: ease-in-out 0.25s;
+  }
+  .Contact:hover {
+    border: 1.5px solid rgba($accentLight-light, 0.75);
+    background-color: rgba($accentLight-light, 0.25);
+    transition: ease-in-out 0.25s;
+  }
+  .gradient-bar {
+    background: linear-gradient(-45deg, #c0e8ff, #0ac6ff, #c0e8ff, #0ac6ff);
+    background-size: 400% 400%;
+    animation: gradient 2s ease 2;
+    width: 100%;
+    height: 3px;
+  }
+  $stroke-color: $textDark-light;
+  .line {
+    stroke: $stroke-color;
+  }
+  .circle-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: right;
+    margin-top: 15.5rem;
+    margin-right: 2.75rem;
+    .Contact {
+      padding: 0;
+      background-color: #ffffff00;
+      border: none;
+    }
+  }
+
+  .circle-menu li {
+    color: $textLight-dark;
+    margin-bottom: 20px;
+  }
+
+  .circle-menu a {
+    color: $textLight-dark;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .circle-menu a:hover {
+    transition: color 0.3s ease;
+    color: $accentDark-dark;
+  }
+  .hover-pointer {
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+  .hover-pointer:hover {
+    transition: color 0.3s ease;
+    color: $accentDark-dark;
+  }
+}
+
+.nav-wrapper {
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+.links {
+  display: flex;
+  gap: 1.75rem;
+}
+
+.span-nav {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  transition: ease-in-out 0.5s;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+// Hamburger Menu
+$stroke-color: $textLight-dark;
+
+.hmb-container {
+  // width: 100%;
+  // height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  z-index: 10000;
+
+  .line {
+    fill: none;
+
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+    }
+    &2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 6;
+    }
+    &3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+    }
+  }
+  &.open .line {
+    &1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+    &2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+    }
+    &3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+  }
+}
+
+//hide nav-wrapper when in mobile resolution
+@media only screen and (max-width: 650px) {
+  .links {
+    display: none;
+  }
+  .hmb-container {
+    display: flex;
+  }
+}
+.circle-menu {
+  position: fixed;
+  top: 1%;
+  right: 1.5%;
+  transform: translate(50%, -50%);
+  width: 5rem;
+  height: 5rem;
+  background-color: #ffffff00;
+  border-radius: 50%;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.circle-menu.open {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  top: 5%;
+  right: 7.5%;
+  background-color: $accentLight-dark;
+  transition-delay: 250ms;
+  width: 20rem;
+  height: 35rem;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.circle-menu::before {
+  transform: scale(0.1);
+  width: 2rem;
+  height: 2rem;
+}

@@ -1,0 +1,39 @@
+@import "/styles/scss-variables";
+.links-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+}
+
+html.dark {
+  .social-link {
+    fill: $textLight-dark;
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: ease-in-out 0.15s;
+  }
+  .social-link:hover {
+    fill: $textDark-dark;
+    transition: ease-in-out 0.15s;
+    transform: scale(1.025);
+  }
+}
+html.light {
+  .social-link {
+    fill: rgba($textDark-light, 0.65);
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: ease-in-out 0.15s;
+  }
+  .social-link:hover {
+    fill: $textDark-light;
+    transition: ease-in-out 0.15s;
+    transform: scale(1.025);
+  }
+}
+@media only screen and (max-width: 650px) {
+  social-link {
+    width: 2rem;
+    height: 2rem;
+  }
+}

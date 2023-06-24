@@ -1,0 +1,271 @@
+@import "/styles/scss-variables.scss";
+html.dark {
+  .contact-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .c-title {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    //   margin-bottom: 1rem;
+    //   background-color: burlywood;
+    height: 20%;
+    color: $textLight-dark;
+  }
+  .form {
+    height: 80%;
+    //   background-color: rgb(73, 61, 61);
+    display: flex;
+    flex-direction: row;
+  }
+  .num {
+    //   margin-top: 2rem;
+    //   margin-top: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 6rem;
+    width: 10%;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $accentLight-dark;
+  }
+  form {
+    //   margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    //   gap: 6rem;
+    width: 90%;
+    color: $accentLight-dark;
+  }
+  .text-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    width: 100%;
+    height: 50%;
+    color: $accentLight-dark;
+    //   background-color: brown;
+    max-height: 25rem;
+    min-height: 20rem;
+  }
+  .submit {
+    //   background-color: cadetblue;
+    height: 10%;
+  }
+  input:not(.button-submit) {
+    width: 80%;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 3.5px solid $textDark-dark;
+    border-radius: 0.15rem;
+    transition: ease-in-out 0.2s;
+    outline: none;
+    color: $textDark-dark;
+  }
+  input:focus {
+    border-color: $textLight-dark;
+    transition: ease-in-out 0.2s;
+  }
+  textarea {
+    width: 80%;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 3.5px solid $textDark-dark;
+    border-radius: 0.15rem;
+    transition: ease-in-out 0.2s;
+    outline: none;
+    color: $textDark-dark;
+    resize: none;
+  }
+  textarea:focus {
+    border-color: $textLight-dark;
+    transition: ease-in-out 0.2s;
+  }
+  .button-submit {
+    cursor: pointer;
+    background-color: $accentLight-dark;
+    color: $textLight-dark;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.35rem;
+    border-radius: 2rem;
+    border-style: none;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+  }
+  .button-submit:hover {
+    // background-color: $accentDark-dark;
+    // color: $textDark-dark;
+    transform: scale(1.035);
+  }
+  .button-submit:active {
+    transform: scale(1.1);
+  }
+
+  // Smaller screens
+  @media only screen and (max-width: 600px) {
+    .c-title {
+      font-size: 3.5rem;
+      margin-left: 0.5rem;
+      font-weight: bold;
+    }
+    .text-form {
+      max-height: 30rem;
+      height: 60%;
+      gap: 5rem;
+    }
+    .num {
+      // gap: 6.5rem;
+      transform: translateY(0.5rem);
+      font-size: 1rem;
+    }
+  }
+}
+html.light {
+  .contact-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .c-title {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    //   margin-bottom: 1rem;
+    //   background-color: burlywood;
+    height: 20%;
+    color: rgba($textDark-light, 0.75);
+  }
+  .form {
+    height: 80%;
+    //   background-color: rgb(73, 61, 61);
+    display: flex;
+    flex-direction: row;
+  }
+  .num {
+    //   margin-top: 2rem;
+    //   margin-top: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 6rem;
+    width: 10%;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $textLight-light;
+  }
+  form {
+    //   margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    //   gap: 6rem;
+    width: 90%;
+    color: $accentLight-light;
+  }
+  .text-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+    width: 100%;
+    height: 50%;
+    color: $accentLight-light;
+    //   background-color: brown;
+    max-height: 25rem;
+    min-height: 20rem;
+  }
+  .submit {
+    //   background-color: cadetblue;
+    height: 10%;
+  }
+  input:not(.button-submit) {
+    width: 80%;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 3.5px solid $textLight-light;
+    border-radius: 0.15rem;
+    transition: ease-in-out 0.2s;
+    outline: none;
+    color: $textDark-light;
+  }
+  input:focus {
+    border-color: $textDark-light;
+    transition: ease-in-out 0.2s;
+  }
+  textarea {
+    width: 80%;
+    height: 2.25rem;
+    font-size: 1.25rem;
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    border-bottom: 3.5px solid $textLight-light;
+    border-radius: 0.15rem;
+    transition: ease-in-out 0.2s;
+    outline: none;
+    color: $textDark-light;
+    resize: none;
+  }
+  textarea:focus {
+    border-color: $textDark-light;
+    transition: ease-in-out 0.2s;
+  }
+  .button-submit {
+    cursor: pointer;
+    background-color: $accentLight-light;
+    color: $textLight-dark;
+    width: 12rem;
+    height: 4rem;
+    font-size: 1.35rem;
+    border-radius: 2rem;
+    border-style: none;
+    font-weight: 400;
+    transition: ease-in-out 0.2s;
+  }
+  .button-submit:hover {
+    // background-color: $accentDark-light;
+    // color: $textDark-light;
+    transform: scale(1.035);
+  }
+  .button-submit:active {
+    transform: scale(1.1);
+  }
+
+  // Smaller screens
+  @media only screen and (max-width: 600px) {
+    .c-title {
+      margin-left: 0.5rem;
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .text-form {
+      max-height: 30rem;
+      height: 60%;
+      gap: 5rem;
+    }
+    .num {
+      // gap: 6.5rem;
+      transform: translateY(0.5rem);
+      font-size: 1rem;
+    }
+  }
+}

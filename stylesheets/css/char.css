@@ -1,0 +1,10 @@
+.char-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  background-color: rgb(15, 122, 122);
+  width: 20rem;
+  height: 20rem;
+}/*# sourceMappingURL=char.css.map */

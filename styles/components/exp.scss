@@ -1,0 +1,88 @@
+@import "/styles/scss-variables.scss";
+
+html.dark {
+  .exp-card {
+    background-color: rgba($container-dark, 0.5);
+    border-radius: 5px;
+    width: 45%;
+    height: 80%;
+    max-width: 530px;
+    //   background-color: burlywood;
+  }
+  .exp-top {
+    // background-color: darkcyan;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.75rem;
+    height: 20%;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: $textLight-dark;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: $container-dark;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .exp-bottom {
+    padding-top: 0.2rem;
+    padding-left: 0.75rem;
+    font-weight: 500;
+  }
+  .date {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: $textDark-dark;
+    margin-right: 1rem;
+  }
+}
+html.light {
+  .exp-card {
+    background-color: rgba($textLight-dark, 0.35);
+    border-radius: 5px;
+    width: 45%;
+    height: 80%;
+    max-width: 530px;
+    //   background-color: burlywood;
+  }
+  .exp-top {
+    // background-color: darkcyan;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.75rem;
+    height: 20%;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: $textLight-light;
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: $container-light;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  .exp-bottom {
+    padding-top: 0.2rem;
+    padding-left: 0.75rem;
+    font-weight: 500;
+  }
+  .date {
+    font-weight: 600;
+    font-size: 0.7rem;
+    color: $textLight-light;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .exp-card {
+    min-width: 464px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .exp-card {
+    min-width: 416px;
+  }
+}

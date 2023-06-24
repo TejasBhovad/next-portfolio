@@ -1,0 +1,32 @@
+.nav-wrapper {
+  gap: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.span-nav {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}/*# sourceMappingURL=navbar.css.map */
