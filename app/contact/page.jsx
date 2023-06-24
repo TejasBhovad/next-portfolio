@@ -11,21 +11,21 @@ const ContactPage = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // emailjs
-    //   .sendForm(
-    //     process.env.NEXT_PUBLIC_SERVICE_ID,
-    //     process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    //     form.current,
-    //     process.env.NEXT_PUBLIC_KEY
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result.text);
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_ID,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        form.current,
+        process.env.NEXT_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
     toast.success("Message Sent", {
       position: "bottom-right",
       autoClose: 2500,
