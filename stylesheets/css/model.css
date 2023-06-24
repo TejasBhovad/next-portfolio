@@ -79,6 +79,21 @@ html.dark .title {
   position: absolute;
   transition: ease-in-out 0.45s;
 }
+@media only screen and (max-width: 850px) {
+  html.dark .model-view {
+    height: 15rem;
+    width: 15rem;
+    transition: ease-in 0.35s;
+  }
+  html.dark .title {
+    font-size: 5rem;
+    transition: ease-in-out 0.45s;
+  }
+  html.dark .circle {
+    height: 13.5rem;
+    width: 13.5rem;
+  }
+}
 
 html.light .circle {
   height: 17.25rem;

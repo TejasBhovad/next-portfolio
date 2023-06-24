@@ -91,6 +91,21 @@ html.dark {
     position: absolute;
     transition: ease-in-out 0.45s;
   }
+  @media only screen and (max-width: 850px) {
+    .model-view {
+      height: 15rem;
+      width: 15rem;
+      transition: ease-in 0.35s;
+    }
+    .title {
+      font-size: 5rem;
+      transition: ease-in-out 0.45s;
+    }
+    .circle {
+      height: 13.5rem;
+      width: 13.5rem;
+    }
+  }
 }
 html.light {
   .circle {
