@@ -1,7 +1,7 @@
 "use client";
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
-import { ToastContainer } from "react-toastify";
+import { ToastContainer,toast } from "react-toastify";
 import "@styles/pages/contact.scss";
 
 const ContactPage = () => {
