@@ -88,6 +88,17 @@ html.light .circle {
   opacity: 0.75;
   transition: ease-in-out 0.35s;
 }
+html.light .title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  color: white;
+  position: fixed;
+  text-align: center;
+  position: absolute;
+  transition: ease-in-out 0.45s;
+}
 @media only screen and (max-width: 850px) {
   html.light .model-view {
     height: 15rem;
