@@ -4,6 +4,7 @@ import docs from "@public/img/docs.png";
 import progress from "@public/img/progress.png";
 import prompt from "@public/img/prompt.png";
 import upixel from "@public/img/upixel.png";
+import link from "@public/img/link.png";
 import { useState } from "react";
 const ProjectsPage = () => {
   const projects = [
@@ -42,6 +43,15 @@ const ProjectsPage = () => {
       desc: "Site made for documenting programs taught",
       ghLink: "https://github.com/TejasBhovad/docs",
       demoLink: "https://tejasbhovad.github.io/docs",
+    },
+    {
+      id: 5,
+      image: link,
+      title: "Link Thing",
+      tags: ["mongoDB", "nextjs"],
+      desc: "Simple Link Tree clone built with NextJS.",
+      ghLink: "https://github.com/TejasBhovad/link-thing",
+      demoLink: "https://linkthing.vercel.app/",
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
